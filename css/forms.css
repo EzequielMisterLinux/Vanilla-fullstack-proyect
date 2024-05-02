@@ -1,0 +1,151 @@
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  position: absolute;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px;
+  width: 100%;
+  display: none;
+  border: 2px solid #0a0a0a;
+  opacity: 200;
+  transition: transform .5s ease, height .2s ease;
+  animation: escalar 1s ease forwards;
+  transition: 1.5s;
+ 
+   
+}
+
+@keyframes escalar {
+  /* Escala de 0 a 1 */
+  from {
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+  
+}
+
+.card.show {
+  display: block;
+
+}
+
+
+
+
+.form-title {
+  text-align: center;
+  margin-bottom: -35px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin: auto 1px;
+}
+
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.form-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #202020;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #036875;
+}
+
+.register-link,
+.login-link,
+.forgotpass {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover,
+.login-link:hover,
+.forgotpass:hover {
+  color: #666;
+}
+
+
+
+.icon-position {
+  transform: translate(320px , -30px);
+  border: none;
+  background: none;
+}
+
+
+.icon-close {
+  transform: translate( 320px, -10px);
+  font-size: 40px;
+  border: none;
+  background: none;
+  color: rgb(168, 0, 0);
+  cursor: pointer;
+
+
+}
+
+
+.google-icon {
+  transform: translate(160px );
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 35px;
+  transition: 1.4s;
+
+}
+
+.google-icon:hover {
+  color: white;
+  transition: 1.4s;
+
+}
+
+
+.form-label-options{
+  display: block;
+  font-weight: bold;
+  display: flex;
+  padding: 1px;
+  margin-bottom: 5px;
+  justify-content: center;
+}
